@@ -8,12 +8,12 @@ var thisName : String = "meow"
 {
 var interogation : String
 print("So... um. Do you like cats? Yes or no?")
-let response = interogationResponse:
+let response = interogationResponse
 let interogationResponse = Scanner.init(string: interogation)
-do CGPDFScannerScan(scanner: interogationResponse)
-if interogationResponse = ("Yes")
+    do {CGPDFScannerScan(scanner: interogationResponse)
+    if interogationResponse = ("Yes"){
 Print("Hey, me too!")
-else if interogationResponse = ("No")
+    else if interogationResponse = ("No"){
 Print("Lame, cats are cool.")
 
 }
@@ -21,3 +21,4 @@ Print("Lame, cats are cool.")
 
 
 
+        
