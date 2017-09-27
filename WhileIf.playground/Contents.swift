@@ -25,7 +25,7 @@ namingExample(outerName: "Dakota")
 
 public func counting() -> Int
 {
-    return (7 * 665)
+    return (2)
 }
 print("I am not \(counting()) years old")
 
@@ -37,3 +37,10 @@ else
 {
     print("not very likely right now")
 }
+var test = 0
+while (test < counting())
+{
+    print("hahaha")
+    test += 1
+}
+print("yay!")
