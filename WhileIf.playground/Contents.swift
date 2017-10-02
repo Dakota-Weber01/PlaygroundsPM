@@ -83,7 +83,7 @@ public class OtherClass
     public func changeInternalState() -> Void
     {
         self.favoriteNumber *= 1237
-        self.favoriteWord += " and more and more"
+        self.favoriteWord += " and yeet and yeet"
     }
 
     public func getFavoriteNumber() -> Int
