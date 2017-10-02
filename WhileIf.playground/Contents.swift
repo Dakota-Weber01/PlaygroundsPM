@@ -44,7 +44,7 @@ while (test < counting())
     test += 1
 }
 print("yay!")
-// DIFFERENT NOTES STARTING HERE ------------------
+// DIFFERENT NOTES STARTING HERE ------------------------------------------------
     var notesToday = "Using Swift to make classes and methods"
 
 public class SimpleClass
@@ -54,7 +54,46 @@ public class SimpleClass
     {
         name = "My name is ..."
     }
+    
+    public func getName() -> String
+    {
+        return name
+    }
 }
+var sample = SimpleClass()
+print(sample.getName())
 
+public class OtherClass
+{
+    private var favoriteNumber :Int
+    private var favoriteWord :String
+
+
+    public init()
+    {
+        favoriteNumber = Int()
+        favoriteWord = String()
+        changeInternalState()
+    }
+    public init(favoriteNumber :Int, favoriteWord :String)
+    {
+        self.favoriteNumber = favoriteNumber
+        self.favoriteWord = favoriteWord
+    }
+    public func changeInternalState() -> Void
+    {
+        self.favoriteNumber *= 1237
+        self.favoriteWord += " and more and more"
+    }
+
+}
+// Swift version v
+var secondClass = OtherClass()
+// Java version OtherClass sample = new OtherClass();
+// It's also not = OtherCLass.inity()
+var thirdSample = OtherClass(favoriteNumber: 24, favoriteWord: "yeet")
+secondClass.changeInternalState()
+thirdSample.changeInternalState()
+thirdSample.changeInternalState()
 
 
