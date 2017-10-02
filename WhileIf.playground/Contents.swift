@@ -86,6 +86,15 @@ public class OtherClass
         self.favoriteWord += " and more and more"
     }
 
+    public func getFavoriteNumber() -> Int
+    {
+    return self.favoriteNumber
+    }
+    
+    public func getFavoriteWord() -> String
+    {
+        return self.favoriteWord
+    }
 }
 // Swift version v
 var secondClass = OtherClass()
@@ -95,5 +104,7 @@ var thirdSample = OtherClass(favoriteNumber: 24, favoriteWord: "yeet")
 secondClass.changeInternalState()
 thirdSample.changeInternalState()
 thirdSample.changeInternalState()
+print(thirdSample.getFavoriteWord())
+
 
 
